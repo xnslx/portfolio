@@ -122,7 +122,6 @@ export function SanityImage(props: SanityAssetImage) {
     url,
     ...rest
   } = props
-  console.log('props', props)
 
   if (!dataset) {
     throw new Error('SanityImage is missing required "dataset" property.')

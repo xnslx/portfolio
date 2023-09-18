@@ -12,4 +12,8 @@ export interface SanityAssetImage {
   crop?: SanityImageCrop
   options: any
   hotspot: SanityImageHotspot
+  dataset: string
+  layout: any
+  projectId: string
+  quality: number
 }
