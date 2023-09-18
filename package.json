@@ -7,6 +7,7 @@
     "lint": "eslint . --fix",
     "typecheck": "tsc --noEmit"
   },
+  "version": "1.0.0",
   "dependencies": {
     "@portabletext/react": "^3.0.0",
     "@remix-run/node": "*",
