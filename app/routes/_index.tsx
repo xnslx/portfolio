@@ -43,7 +43,17 @@ export const loader = async ({request}: LoaderArgs) => {
     title,
     "slug": slug.current,
     "artist": artist->title,
-    image
+    image{
+      ...,
+      "data": asset-> metadata,
+      "altText": asset->altText,
+      "blurDataURL": asset->metadata.lqip,
+      'height': asset->metadata.dimensions.height,
+      'url': asset->url,
+      'width': asset->metadata.dimensions.width,
+      crop,
+      hotspot,
+    },
   }`
 
   const records = await getClient(preview)
