@@ -1,5 +1,3 @@
-/* eslint-disable import/no-default-export */
-/* eslint-disable react-hooks/rules-of-hooks */
 import imageUrlBuilder from '@sanity/image-url'
 import type {ImageUrlBuilder} from '@sanity/image-url/lib/types/builder'
 import {useEffect, useRef, useState} from 'react'
@@ -67,7 +65,7 @@ const generateSizes = (breakpoints: number[], sizes: any[]) => {
 /**
  * A simple image component that wraps around `@sanity/image-url`
  */
-function SanityImage(props: SanityAssetImage) {
+export function SanityImage(props: SanityAssetImage) {
   const {
     blurDataURL,
     crop,
@@ -194,5 +192,3 @@ function SanityImage(props: SanityAssetImage) {
     </div>
   )
 }
-
-export default SanityImage;

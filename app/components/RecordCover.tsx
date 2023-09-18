@@ -2,7 +2,8 @@ import type {SanityImageObjectStub} from '@sanity/asset-utils'
 import urlBuilder from '@sanity/image-url'
 import React from 'react'
 
-// import {SanityImage} from '~/components/SanityImage'
+// import SanityImage from 'sanity-remix-template'
+import SanityImage from '~/components/SanityImage'
 import {projectDetails} from '~/sanity/projectDetails'
 
 type RecordCoverProps = {
