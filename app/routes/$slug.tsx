@@ -115,7 +115,17 @@ export const loader = async ({params, request}: LoaderArgs) => {
     // for simplicity in this demo these are typed as "any"
     // we can make them type-safe with a little more work
     // https://www.simeongriggs.dev/type-safe-groq-queries-for-sanity-data-with-zod
-    image,
+    image{
+      ...,
+      "data": asset-> metadata,
+      "altText": asset->altText,
+      "blurDataURL": asset->metadata.lqip,
+      'height': asset->metadata.dimensions.height,
+      'url': asset->url,
+      'width': asset->metadata.dimensions.width,
+      crop,
+      hotspot,
+    },
     content,
     // this is how we extract values from arrays
     tracks[]{

@@ -2,7 +2,7 @@ import type {SanityImageObjectStub} from '@sanity/asset-utils'
 import urlBuilder from '@sanity/image-url'
 import React from 'react'
 
-import {SanityImage} from '~/components/SanityImage'
+// import {SanityImage} from '~/components/SanityImage'
 import {projectDetails} from '~/sanity/projectDetails'
 
 type RecordCoverProps = {
@@ -15,7 +15,7 @@ export function RecordCover(props: RecordCoverProps) {
   console.log(props)
 
   return (
-    <div className="aspect-square relative">
+    <div className="relative aspect-square">
       {image ? (
         <SanityImage
           _type={'image'}
